@@ -18,12 +18,12 @@ interface User {
   age: number;
 }
 
-// Merged: { name: string; age: number; }
+// Merged: { name: string; age: number; }```
 
 Type aliases are better suited for union and intersection types.
 
 ```type Status = 'success' | 'error';
-type UserInfo = { name: string } & { age: number };
+type UserInfo = { name: string } & { age: number };```
 
 Use interfaces for object shapes, especially in public APIs and libraries. Use types for more complex type compositions or when working with primitives, tuples, or union types.
 
